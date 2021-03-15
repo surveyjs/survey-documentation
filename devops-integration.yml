@@ -42,7 +42,7 @@ steps:
       git pull origin master
       git fetch --tags --force
       git add surveyjs.io/App_Data/Docs
-      git reset -- surveyjs.io/App_Data/Docs/images
+      git reset surveyjs.io/App_Data/Docs/devops-integration.yml
       git commit -m "[skip ci] Updated survey-documentation docs"
       git pull origin master
       git push origin master

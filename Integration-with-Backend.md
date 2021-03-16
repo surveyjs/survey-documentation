@@ -14,7 +14,7 @@ Each is a JavaScript-written client library that works in a web browser and is s
 
 A simplified diagram of how SurveyJS client libraries interact with an application's server part might look as follows.
 
-![Client-Server Interaction](https://raw.githubusercontent.com/surveyjs/survey-documentation/master/images/client-server-interaction.png)
+![Client-Server Interaction](https://github.com/surveyjs/survey-documentation/blob/main/images/client-server-interaction.png?raw=true)
 
 ### JSONs to Communicate
 

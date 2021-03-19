@@ -1,0 +1,49 @@
+resources:
+  repositories:
+    - repository: Service # The name used to reference this repository in the checkout step
+      type: github
+      endpoint: surveyjs
+      name: surveyjs/service
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - main
+  tags:
+    exclude:
+      - v*.*.*
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - checkout: self
+  - checkout: Service
+    persistCredentials: true
+    clean: true
+
+  - task: CopyFiles@2
+    inputs:
+      SourceFolder: "$(Build.SourcesDirectory)/survey-documentation"
+      TargetFolder: "$(Build.SourcesDirectory)/service/surveyjs.io/App_Data/Docs"
+      CleanTargetFolder: true
+    displayName: "copy docs to the local surveyjs/service repo"
+  
+  # read about the problem with git output ($env:GIT_REDIRECT_STDERR = '2>&1') :
+  # https://github.com/microsoft/azure-pipelines-yaml/issues/248
+  # https://stackoverflow.com/questions/58485585/azure-pipeline-powershell-and-git-on-windows-server-2019-gives-error-in-output
+  - powershell: |
+      cd $(Build.SourcesDirectory)/service
+      $env:GIT_REDIRECT_STDERR = '2>&1'
+      git config --global user.email "kurmanov.work@gmail.com"
+      git config --global user.name "dmitrykurmanov"
+      git checkout master
+      git pull origin master
+      git fetch --tags --force
+      git add surveyjs.io/App_Data/Docs
+      git reset surveyjs.io/App_Data/Docs/devops-integration.yml
+      git commit -m "[skip ci] Updated survey-documentation docs"
+      git pull origin master
+      git push origin master
+    displayName: "git surveyjs/service push updated docs"

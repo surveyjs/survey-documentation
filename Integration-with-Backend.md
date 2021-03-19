@@ -12,7 +12,7 @@ Each is a JavaScript-written client library that works in a web browser and is s
 
 ## Client-Server Interaction
 
-A simplified diagram of how SurveyJS client libraries interact with an application's server part might look as follows.
+A simplified diagram of how SurveyJS client libraries interact with an application's server part looks as follows.
 
 ![Client-Server Interaction](images/client-server-interaction.png)
 
@@ -43,18 +43,18 @@ If talking about on-premises application development, it is worth to admit that 
    * a `survey definition` (in JSON format)
 
    Customizable through public API.  
-   Learn more: [Site](), [Docs](), [Examples](https://surveyjs.io/Examples/Survey-Creator/)
+   Learn more: [Site](https://surveyjs.io/Overview/Survey-Creator), [Docs](https://surveyjs.io/Documentation/Survey-Creator), [Examples](https://surveyjs.io/Examples/Survey-Creator/)
 
  * **SurveyJS Library**  
- A core client library that allows developers to run a survey in a respondent's browser. The library's main tasks are to show a survey to respondents and to collect their answers. Developers can use the library's public API to programmatically customize any survey element as their application needs dictate.  
+ A core client library that allows developers to run a survey in a respondent's browser. The library's main tasks are to show a survey to a respondent and to collect respondent answers (a response). Developers can use the library's public API to programmatically customize any survey element as their application needs dictate.  
    Receives: 
    * a `survey definition` (in JSON format)
 
    Returns: 
    * a `survey response` (in JSON format)
    
-   Provides huge public API for customization.    
-   Learn more: [Site](), [Docs](), [Examples](https://surveyjs.io/Examples/Library/)
+   Provides a huge public API for customization.    
+   Learn more: [Site](https://surveyjs.io/Overview/Library), [Docs](https://surveyjs.io/Documentation/Library), [Examples](https://surveyjs.io/Examples/Library/)
 
  * **SurveyJS Analytics Pack**  
  A client library to visualize and analyze a survey's results (all collected responses).  
@@ -63,7 +63,7 @@ If talking about on-premises application development, it is worth to admit that 
    * a list of `survey responses` (in JSON format)
 
    Provides public API for customization.  
-   Learn more: [Site](), [Docs](), [Examples](https://surveyjs.io/Examples/Analytics)
+   Learn more: [Site](https://surveyjs.io/Overview/Analytics), [Docs](https://surveyjs.io/Documentation/Analytics), [Examples](https://surveyjs.io/Examples/Analytics)
 
 * **SurveyJS PDF Export**  
 A client library to export survey responses to PDF files.  
@@ -72,7 +72,7 @@ A client library to export survey responses to PDF files.
    * a `survey response` (in JSON format)
 
    Provides public API for customization.  
-   Learn more: [Site](), [Docs](), [Examples](https://surveyjs.io/Examples/Pdf-Export)
+   Learn more: [Site](https://surveyjs.io/Overview/Survey-Pdf-Export), [Docs](https://surveyjs.io/Documentation/Pdf-Export), [Examples](https://surveyjs.io/Examples/Pdf-Export)
 
 ### Server Side
 Implementation of an application's back-end part is a custom development task which is out of the SurveyJS libraries' application scope. Provide your own backend implementation based upon your business needs.

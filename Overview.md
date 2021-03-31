@@ -21,7 +21,7 @@ SurveyJS offers the following client libraries to use by application developers:
  [Overview](https://surveyjs.io/Overview/Survey-Pdf-Export) - [Examples](https://surveyjs.io/Examples/Pdf-Export) - [Docs](https://surveyjs.io/Documentation/Pdf-Export) - [Sources](https://github.com/surveyjs/survey-pdf)
 
 ## Cloud Service
-SurveyJS offers the following cloud service to demonstrate how SurveyJS libraries can be work together as a survey management solution:
+SurveyJS offers the following cloud service to demonstrate how SurveyJS libraries can work together as a survey management solution:
 
  * **My Surveys**  
 [Try in Action](https://surveyjs.io/Service/MySurveys)  

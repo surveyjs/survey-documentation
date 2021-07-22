@@ -34,7 +34,10 @@ Examples:
    * WordPress plugin ([Overview](https://wordpress.org/plugins/surveyjs/), [Sources](https://github.com/surveyjs/surveyjs-wordpress))
 
  ## Learn More  
- 
+
+ ### Getting Started
+ * [Getting Started with SurveyJS - The Very Basics](https://surveyjs.io/Documentation/Library?id=Getting-Started-The-Very-Basics)
+
  ### Concepts
  * [How SurveyJS Libraries Interact with the Server and Integrate with a Backend](Integration-with-Backend.md)
 

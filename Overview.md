@@ -39,7 +39,7 @@ Examples:
  * [Getting Started with SurveyJS - The Very Basics](https://surveyjs.io/Documentation/Library?id=Getting-Started-The-Very-Basics)
 
  ### Concepts
- * [How SurveyJS Libraries Interact with the Server and Integrate with a Backend](Integration-with-Backend.md)
+ * [How SurveyJS Libraries Interact with the Server and Integrate with a Backend](Documentation?id=Integration-with-Backend)
 
  ### Support
  * [Customer Portal](https://surveyjs.answerdesk.io/)
